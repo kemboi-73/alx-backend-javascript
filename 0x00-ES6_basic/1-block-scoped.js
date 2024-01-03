@@ -1,14 +1,11 @@
-// 1-block-scoped.js
-
 export default function taskBlock(trueOrFalse) {
-  let task = false;  // Use let instead of var
-  let task2 = true;   // Use let instead of var
+  let task = false;
+  let task2 = true;
 
   if (trueOrFalse) {
-    let task = true;   // Use let instead of var
-    let task2 = false;  // Use let instead of var
+    const task = true;
+    const task2 = false;
   }
 
   return [task, task2];
 }
-
